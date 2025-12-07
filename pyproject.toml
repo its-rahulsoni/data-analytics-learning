@@ -17,7 +17,7 @@ dependencies = [
     "sqlalchemy (>=2.0.44,<3.0.0)",
     "pymysql (>=1.1.2,<2.0.0)",
     "numpy>=2.2.0,<2.3.0",
-    "pandas>=2.2.0,<2.3.0",
+    "pandas (>=2.2.0,<2.3.0)",
     "matplotlib>=3.8.0,<3.10.0"
 ]
 
