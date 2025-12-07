@@ -134,7 +134,7 @@ Variance — measures how spread out values are around the mean. High variance �
 
 Standard Deviation (std) — square root of variance; in same units as data. Helps gauge “typical deviation” from mean.
 """
-print("mean / variance / standard deviations")
+print("1D array - mean / variance / standard deviations")
 # Example 1D data: ages of students
 ages = np.array([18, 20, 22, 19, 21, 20, 23, 22])
 
@@ -151,4 +151,28 @@ std_age = np.std(ages) # computes standard deviation: sqrt of variance.
 print("Standard deviation of age:", std_age)
 
 print("--------------------------------\n")
+
+data = np.array([
+    [18, 50000, 85],
+    [20, 55000, 90],
+    [22, 60000, 88],
+    [19, 52000, 87]
+])
+
+print("2D array - mean / variance / standard deviations")
+
+# Mean of each column (feature-wise stats)
+feature_means = np.mean(data, axis=0)
+print("Feature means:", feature_means)
+
+# Std dev of each column
+feature_std = np.std(data, axis=0)
+print("Feature std:", feature_std)
+
+# If you want row-wise mean (per sample)
+row_means = np.mean(data, axis=1)
+print("Row means:", row_means)
+
+print("--------------------------------\n")
+
 # -----------------------------------------------------------------------------------------------------------
