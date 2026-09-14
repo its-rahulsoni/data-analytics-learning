@@ -6,6 +6,7 @@ def clear_screen():
 
 clear_screen()
 
+# TASK: 
 # Create a 5x5 array of random integers. Extract: the second row, the last column, a 2x2 sub-block from the corner, every other row.
 
 mat = np.array([
