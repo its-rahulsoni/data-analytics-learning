@@ -175,4 +175,64 @@ print("Row means:", row_means)
 
 print("--------------------------------\n")
 
+# Explanation for the above implementation.
+# The data as a table
+
+# Think of your array as a small table with 4 rows (people) and 3 columns (features: age, salary, score):
+
+# | Row | Age | Salary | Score |
+# |-----|-----|--------|-------|
+# | 0 | 18 | 50000 | 85 |
+# | 1 | 20 | 55000 | 90 |
+# | 2 | 22 | 60000 | 88 |
+# | 3 | 19 | 52000 | 87 |
+
+# ## axis=0 → operate down each column
+
+# `np.mean(data, axis=0)` collapses the **rows**, leaving one result per **column**. In other words, it walks down each column and averages it. This gives you "feature-wise" statistics 
+# — the average age across all people, the average salary across all people, and so on.
+
+# - Age column: (18+20+22+19)/4 = 19.75
+# - Salary column: (50000+55000+60000+52000)/4 = 54250
+# - Score column: (85+90+88+87)/4 = 87.5
+
+# So `feature_means = [19.75, 54250, 87.5]`
+
+# Mentally: **axis=0 means "squash the rows together."**
+
+# ## Standard deviation, same idea
+
+# `np.std(data, axis=0)` also collapses rows, but instead of averaging the raw values, it measures how spread out each column is around its own mean. For each column it computes 
+# the average squared distance from the mean, then takes the square root.
+
+# - Age std ≈ 1.48
+# - Salary std ≈ 3766.6
+# - Score std ≈ 1.80
+
+# (Note: NumPy's default `std` uses population standard deviation — divides by n, not n−1.)
+
+# ## axis=1 → operate across each row
+
+# `np.mean(data, axis=1)` does the opposite: it collapses the **columns**, leaving one result per **row**. It walks across each row and averages the values in that row.
+
+# - Row 0: (18+50000+85)/3 ≈ 16701.0
+# - Row 1: (20+55000+90)/3 ≈ 18370.0
+# - Row 2: (22+60000+88)/3 ≈ 20036.67
+# - Row 3: (19+52000+87)/3 ≈ 17368.67
+
+# Mentally: **axis=1 means "squash the columns together."**
+
+# ## Why row_means looks odd here
+
+# Notice those row means are dominated by the salary number — since age, salary, and score are on wildly different scales, averaging across a row doesn't really mean anything 
+# meaningful in this dataset (it's mixing apples and oranges). Row-wise stats make sense when all columns represent the same kind of quantity (e.g., three test scores per student). 
+# Column-wise stats (axis=0) are the natural choice here since each column is a distinct feature.
+
+# ## Quick rule of thumb
+
+# - axis=0 → "down the rows" → one output per column
+# - axis=1 → "across the columns" → one output per row
+
+# A trick some people use: axis=0 removes the row dimension (shape (4,3) → (3,)), and axis=1 removes the column dimension (shape (4,3) → (4,)).
+
 # -----------------------------------------------------------------------------------------------------------
