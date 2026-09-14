@@ -45,6 +45,14 @@ def time_with_time_module(data_list, data):
     start = time.time()
     np_mean, np_var = mean_variance_numpy(data)
     np_time = time.time() - start
+
+    # The basic mechanism: f-strings
+    # The f before the opening quote (f"...") makes it an f-string (formatted string literal). Anything inside { } gets evaluated as a Python expression and its result gets inserted 
+    # into the string.
+
+    # The .6f   part — format specification:
+    # -> 'f'  — display the number as a fixed-point decimal (not scientific notation, not an integer).
+    # -> '.6' — show exactly 6 digits after the decimal point.
  
     print("--- Using time.time() ---")
     print(f"Loop  -> mean: {loop_mean:.6f}, variance: {loop_var:.6f}, time: {loop_time:.4f} s")
