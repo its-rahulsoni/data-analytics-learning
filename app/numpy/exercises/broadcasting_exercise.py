@@ -12,7 +12,8 @@ something you do — it's implicit, just how the comparison works.
 """
 
 """
-Broadcasting drill: given a matrix of shape (5,3) and a vector of shape (3,), subtract the vector from every row without a loop. Then given a matrix of shape (5,3) 
+Task:
+Broadcasting drill: Given a matrix of shape (5,3) and a vector of shape (3,), subtract the vector from every row without a loop. Then given a matrix of shape (5,3) 
 and a vector of shape (5,), subtract it from every column without a loop (you'll need to reshape the vector — figure out to what shape, don't look it up first, then verify).
 
 """
@@ -20,7 +21,7 @@ and a vector of shape (5,), subtract it from every column without a loop (you'll
 import numpy as np
 import time
 
-def matix_vector_nultiplication():
+def matix_vector_multiplication():
     matrix = np.array([
         [10, 20, 30],
         [40, 50, 60],
@@ -133,8 +134,37 @@ def matix_vector_nultiplication():
     # --------------------------------------------------------------------------------------    
 
 
+"""
+Task:
+Deliberately write code that triggers a broadcasting shape-mismatch error (e.g., try to add a (5,3) array and a (4,) array). Read the actual error message. 
+Write one sentence explaining what it means in your own words.
+"""
+def matix_vector_wrong_multiplication():
+
+    # np.ones(shape) creates an array filled entirely with 1.0s, in the given shape. It's a quick way to get an array with a specific shape without caring about the actual values ....
+    array_a = np.ones((5, 3))
+
+    # Same idea, but shape (4,) — a 1D array of four 1.0s ....
+    array_b = np.ones((4,))
+
+    try:
+        """
+        Reasoning: Shapes: (5, 3) and (4,).
+        Pad (4,) on the left with a 1: → (1, 4)
+
+        Compare right to left against (5, 3):
+
+        Rightmost position: matrix has 3, vector (padded) has 4. Equal? No. Is either one 1? No. → Incompatible, immediately.
+        """
+        result = array_a + array_b
+    except ValueError as e:
+        print("Error type:", type(e).__name__) # type(e).__name__ gets the class name of the exception (ValueError) — confirming what kind of error it is ....
+        print("Error message:", e) # print(..., e) prints the actual message text NumPy attached to the exception — the human-readable explanation ....
+
+
 def main():
-    matix_vector_nultiplication()
+    matix_vector_multiplication()
+    matix_vector_wrong_multiplication()
  
  
 if __name__ == "__main__":
