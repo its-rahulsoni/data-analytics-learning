@@ -207,6 +207,10 @@ class TitanicGroupAnalysis:
 
     Same pattern as q5 from before — narrow each of those 6 buckets down to the Survived column, then average the 0/1 values within each bucket, which (as you learned) gives you 
     the survival rate for that specific class-and-sex combination.
+
+    It's still a Series (one column of numbers), but its index is now a MultiIndex — a two-level, hierarchical row label instead of the single flat label you've seen everywhere 
+    else (like Pclass alone, or Sex alone). Each row is now identified by a pair of labels — (1, "female"), (1, "male"), (2, "female"), and so on — rather than a single one. 
+    That's why the printed output shows Pclass and Sex stacked as two separate label columns on the left, instead of one.
     """
     def survival_rate_by_class_and_sex(self):
         # Group by class AND sex together, get mean survival rate
