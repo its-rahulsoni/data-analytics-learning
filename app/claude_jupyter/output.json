@@ -1,0 +1,65 @@
+[
+  {
+    "output": "# Nutrition Plan for Strength & Power Gains\n\n## Daily Calorie & Macro Targets\n- **Calories:** ~2,800-3,200 (depending on activity level)\n- **Protein:** 170-190g daily (~2.0-2.2g per kg)\n- **Carbs:** 300-380g (around workouts especially)\n- **Fats:** 75-90g (for hormone production)\n\n## Protein Sources (Lactose-Free)\n- Chicken, turkey, lean beef\n- Fish & salmon (omega-3 bonus)\n- Eggs\n- Greek yogurt alternatives (coconut, oat-based)\n- Legumes (lentils, chickpeas)\n- Protein powder (whey isolate or plant-based)\n\n## Pre-Workout (1-2 hours before)\n- Carbs + moderate protein\n- *Examples:* Banana + almond butter, rice + chicken, oatmeal + berries\n\n## Post-Workout (within 2 hours)\n- Carbs + protein (20-40g protein)\n- *Examples:* Grilled chicken + sweet potato, salmon + white rice, protein shake + fruit\n\n## Other Key Foods\n- Whole grains (rice, oats, quinoa)\n- Vegetables (spinach, broccoli, peppers)\n- Healthy fats (avocado, olive oil, nuts)\n- Fortified dairy alternatives for micronutrients\n\n## Key Tip\nTime carbs & protein around workouts for optimal recovery and muscle protein synthesis.\n\nWould you like specific meal ideas or a sample day?",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "180 cm",
+        "weight": "85 kg",
+        "goal": "Maximize strength and power gains through proper nutrition and workout timing",
+        "restrictions": "Lactose intolerant"
+      },
+      "solution_criteria": [
+        "Meal plan covers a full 24-hour period with at least 4 distinct meals",
+        "Protein-heavy macros with minimum 2.2g protein per kg bodyweight (~187g total)",
+        "Includes pre-workout and post-workout meals timed appropriately around strength training session",
+        "All meals respect lactose-free restriction with no dairy products"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Testing with a strength/power athlete (weightlifter) needing protein-heavy meals with specific macro ratios and meal timing around workout sessions"
+    },
+    "score": 2,
+    "reasoning": "The solution fails to meet all three mandatory requirements. While it provides sound nutritional guidance and macro targets, it is fundamentally a framework/template rather than an actual 1-day meal plan. The task explicitly requires 'exact foods, portions, and timing' organized into 'at least 4 distinct meals' with a 'daily caloric total.' The solution provides none of these specifics - it only offers general principles and example categories. The closing question ('Would you like specific meal ideas or a sample day?') confirms the solution is incomplete and does not deliver what was requested. This is a structural failure to meet the core deliverable."
+  },
+  {
+    "output": "# Pre-Match & Recovery Nutrition Plan for Soccer\n\n## Pre-Match Meal (2-3 hours before)\n- **Pasta or rice** with tomato-based sauce\n- **Bread** with hummus\n- **Banana** or dates\n- **Water** or sports drink\n\n*Goal: 60-80g carbs, easily digestible*\n\n## 30-60 Minutes Before Match\n- **Sports drink** (electrolytes + carbs)\n- **Banana** or applesauce pouch\n- **Water**\n\n## During Match (if longer than 60 min)\n- **Sports drink** with electrolytes\n- **Water**\n\n## Post-Match Recovery (within 30 min)\n- **Smoothie**: plant-based protein powder, banana, oat milk, berries\n- **Toast with peanut/sunflower seed butter**\n- **Sports drink** or coconut water\n- **Fruit** (orange, mango, or berries)\n\n*Goal: 20-30g protein + 60-80g carbs*\n\n## Daily Nutrition Targets\n- **Protein**: ~85-95g/day (tofu, tempeh, legumes, plant protein powder, seeds)\n- **Carbs**: 300-350g/day (whole grains, fruits, vegetables)\n- **Hydration**: 3-4L water daily\n\n## Safe Options to Emphasize\n\u2713 Seeds (sunflower, pumpkin, hemp, sesame)\n\u2713 Legumes (lentils, chickpeas, beans)\n\u2713 Whole grains\n\u2717 Tree nuts (almonds, cashews, walnuts, etc.)\n\nWould you like specific meal timing or recipes?",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "178",
+        "weight": "72",
+        "goal": "pre-match energy and recovery for soccer performance",
+        "restrictions": "vegan, tree nut allergy"
+      },
+      "solution_criteria": [
+        "Meal plan covers full day with breakfast, lunch, pre-match snack, and post-match recovery meal",
+        "All meals are vegan and tree nut-free with no animal products or tree nuts",
+        "Includes adequate protein sources (legumes, seeds, soy products) and carbohydrates for soccer performance and recovery",
+        "Portions are compact and concise (1-2 sentences per meal maximum)"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Testing with a sport-specific dietary restriction scenario (vegan soccer player or athlete with food allergies) requiring creative nutrient substitutions while maintaining performance nutrition"
+    },
+    "score": 2,
+    "reasoning": "The solution fails to meet all three mandatory requirements. While it provides good nutritional guidance and correctly addresses dietary restrictions, it lacks: (1) daily caloric total, (2) specific macronutrient breakdown with exact numbers per meal, and (3) a complete 1-day meal plan with concrete portions and timing. The plan provides a framework and guidelines rather than an actionable meal plan with breakfast, lunch, pre-match snack, and post-match recovery specified with exact foods and portions. For a 178cm/72kg soccer athlete, specific caloric and macronutrient targets are essential but entirely absent."
+  },
+  {
+    "output": "# Marathon Race Day Nutrition Plan\n\n## Pre-Race (3-7 Days Before)\n**Carb Loading Phase**\n- **Carbs**: 10-12g per kg body weight daily = 680-816g carbs\n- Focus on easily digestible carbs: pasta, rice, bread, potatoes, oats\n- Maintain protein (1.6g/kg = 109g) and reduce fiber/fat slightly\n- Example: 3000-3500 calories with 60-65% from carbs\n\n## Race Day (2-3 Hours Before)\n- **Meal**: 200-300g carbs, low fat, low fiber, familiar foods\n  - Option 1: 2-3 bagels with peanut butter & banana\n  - Option 2: Oatmeal with honey and berries\n  - Option 3: Toast with jam and sports drink\n- Drink 400-600ml water/electrolyte drink\n- *Finish 3 hours before race start*\n\n## During Race\n- **Every 45-60 min**: 30-60g carbs per hour\n  - Sports drinks, gels, energy chews, or sports bars\n- **Hydration**: 400-800ml fluids per hour (adjust for heat/humidity)\n- Electrolytes (sodium 300-600mg per liter)\n\n## Post-Race Recovery\n- Within 30 mins: 1.2g carbs/kg + 0.3g protein/kg = 81g carbs + 20g protein\n  - Chocolate milk, banana with yogurt, or recovery drink\n\n## Key Points\n\u2713 Practice this plan during training runs\n\u2713 Stay hydrated consistently in days leading up\n\u2713 Avoid anything new on race day\n\nWould you like specific meal examples or timing adjustments?",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "178 cm",
+        "weight": "68 kg",
+        "goal": "Marathon runner preparing for race day - carbohydrate loading with 3000+ calorie intake and hydration strategy",
+        "restrictions": "None"
+      },
+      "solution_criteria": [
+        "Total daily calories meet or exceed 3000 calories",
+        "Carbohydrates comprise at least 60% of total calories",
+        "Includes hydration strategy with specific fluid intake recommendations",
+        "Meal plan is compact and covers one full day (breakfast, lunch, dinner, snacks)"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Testing with a high-endurance athlete (marathon runner) requiring 3000+ calories with emphasis on carbohydrate loading and hydration strategy"
+    },
+    "score": 2,
+    "reasoning": "The solution violates all three MANDATORY requirements. It fails to provide: (1) a daily caloric total with specific number, (2) a complete macronutrient breakdown in grams, and (3) a cohesive one-day meal plan with exact foods, portions, and timing for breakfast, lunch, dinner, and snacks. The response instead structures advice around race preparation phases spanning multiple days. While the nutritional guidance is technically sound and addresses carb-loading and hydration strategies, the format and structure do not meet the core requirement of a 'compact, concise 1 day meal plan' with the mandatory details specified. The task explicitly asks for 'one full day (breakfast, lunch, dinner, snacks)' which is entirely absent."
+  }
+]
